@@ -28,7 +28,7 @@ do
       echo
       echo "List of cars "
       echo
-      sort -n my_old_cars | while read line
+      sort -n my_old_cars | while read -r line
       do
         echo "$line"
         echo
