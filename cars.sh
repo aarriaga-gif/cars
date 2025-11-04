@@ -5,22 +5,22 @@
 
 choice=0
 
-while [ $choice -ne 3 ]
+while [ "$choice" -ne 3 ]
 do
   echo "1. Add a car"
   echo "2. List the cars"
   echo "3. Quit"
   echo -n "Enter your choice: "
-  read choice
+  read -r choice
 
   case $choice in
     1)
       echo -n "Enter Year: "
-      read year
+      read -r year
       echo -n "Enter Make: "
-      read make
+      read -r make
       echo -n "Enter Model: "
-      read model
+      read -r model
       echo "$year:$make:$model" >> my_old_cars
       echo "Car added!"
       ;;
